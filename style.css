@@ -1,0 +1,120 @@
+/* --- Globalne ustawienia i typografia --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Layout i Sekcja główna --- */
+main {
+    max-width: 800px; /* Layout: max-width dla artykułu */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    /* EFEKT DYNAMICZNY 1: Animacja pojawiania się artykułu */
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Definicja animacji wejścia */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Nagłówek i Nawigacja --- */
+header {
+    background-color: #e32219; /* Czerwień Ferrari */
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.motto {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    /* Płynne przejście przy najechaniu */
+    transition: color 0.3s ease, transform 0.3s ease; 
+    display: inline-block;
+}
+
+/* EFEKT DYNAMICZNY 2: Hover na linkach w menu */
+nav ul li a:hover {
+    color: #ffcc00; /* Żółty z logo Ferrari */
+    transform: scale(1.1); /* Delikatne powiększenie */
+}
+
+/* --- Stylizacja Artykułu --- */
+article h2, article h3 {
+    color: #e32219;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 5px;
+}
+
+article p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+blockquote {
+    background-color: #f9f9f9;
+    border-left: 5px solid #e32219;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #555555;
+}
+
+/* EFEKT DYNAMICZNY 3: Hover na linkach w tekście */
+article a {
+    color: #e32219;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+article a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* --- Stopka --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222222;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
